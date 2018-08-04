@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.16"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            app:srcCompat="@drawable/right" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="New Password"
+            android:layout_alignBaseline="@+id/event_title"
+            android:layout_alignBottom="@+id/event_title"
+            android:layout_toStartOf="@+id/event_title"
+            android:layout_marginEnd="92dp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Save"
+            android:textSize="20sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/c_pd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:text="Current Password" />
+    <EditText
+        android:id="@+id/c_pd_text"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:ems="2"
+
+        android:layout_weight="0.15" />
+
+    <TextView
+        android:id="@+id/n_pd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:text="New Password" />
+    <EditText
+        android:id="@+id/n_pd_text"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:ems="2"
+
+        android:layout_weight="0.15" />
+    <TextView
+        android:id="@+id/r_pd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Re-enter New Password" />
+    <EditText
+        android:id="@+id/r_pd_text"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:ems="2"
+
+        android:layout_weight="0.15" />
+
+
+
+</LinearLayout>
+
